@@ -13,12 +13,24 @@ A privacy-first, lightweight, native Android social client project.
 ## Important platform boundary
 Facebook controls its own services and data. This app cannot prevent Facebook from storing account activity, posts, messages, or other information on Facebook systems. Features will be included only where current official APIs and granted permissions support them. Unsupported features must be clearly marked unavailable rather than simulated.
 
-## Project status
+## Current implementation status
 - [x] Repository verified: ishak6/OmniSocial-Lite
-- [x] Product direction and privacy boundary documented
-- [ ] Android implementation
-- [ ] Official API capability and permission review
-- [ ] Automated build and device testing
-- [ ] Security and release verification
+- [x] Product requirements, architecture, threat model, and milestone plan committed
+- [x] Preliminary official API capability assessment committed
+- [x] Native Compose project shell and 5-tab navigation committed
+- [x] Minimal initial manifest: INTERNET only; cleartext traffic disabled; backup disabled
+- [x] GitHub Actions build workflow committed
+- [ ] CI build result verified
+- [ ] Meta Developer App and exact permission/app-review requirements confirmed
+- [ ] Live provider integration
+- [ ] Device testing, security audit, and release APK
 
-See docs/REQUIREMENTS.md, docs/ARCHITECTURE.md, and docs/MILESTONES.md.
+## Current UI behavior
+The initial screens are a native UI shell only. They do not display fake feed items, fake search results, or pretend that login, posting, or messaging works. Provider-dependent features remain visibly unconnected until an official API path is confirmed.
+
+See:
+- docs/REQUIREMENTS.md
+- docs/ARCHITECTURE.md
+- docs/THREAT-MODEL.md
+- docs/PROVIDER-CAPABILITIES.md
+- docs/MILESTONES.md
